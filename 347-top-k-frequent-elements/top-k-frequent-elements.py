@@ -15,7 +15,7 @@ class Solution:
             lis.append(num)
         lis.sort()
         lis = lis[-k:]
-        for i in lis[:k]:
+        for i in lis:
             for k in check:
                 if check[k] == i and k not in answer:
                     answer.append(k)
