@@ -6,5 +6,5 @@ class Solution:
             if key not in answer:
                 answer[key] = [word]
             else:
-                answer[key].extend([word])
+                answer[key].append(word)
         return answer.values()
