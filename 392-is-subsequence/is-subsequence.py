@@ -9,5 +9,4 @@ class Solution:
             if s[left] == t[i]:
                 length+=1
                 left+=1
-        print(length)
         return len(s) == length
