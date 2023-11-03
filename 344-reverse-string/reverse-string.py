@@ -3,11 +3,20 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        left, right = 0, len(s) - 1
-        while left < right:
+        # index = len(s) - 1
+        # for i in range(len(s)):  
+        #     temp = s[i]
+        #     s[i] = s[index]
+        #     s[index] = temp
+        #     index -= 1
+        #     if index <= i:
+        #         break
+        left = 0
+        right = len(s) - 1
+        while left <= right:
             temp = s[left]
             s[left] = s[right]
             s[right] = temp
-            left+=1
-            right-=1
+            left += 1
+            right -= 1
         return s
