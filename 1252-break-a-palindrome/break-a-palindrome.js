@@ -12,6 +12,8 @@ var breakPalindrome = function(palindrome) {
             let reverseStr = str.split('').reverse().join('')
             if (str !== reverseStr) {
                 return str
+            } else {
+                break;
             }
         }
     }
