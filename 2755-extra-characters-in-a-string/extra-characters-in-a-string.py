@@ -8,7 +8,8 @@ class Solution:
                 return 0
             if i in memo:
                 return memo[i]
-            res = 1 + dfs(i + 1) # skip the character and a character is added  because we skipped it
+            res = 1 + dfs(i + 1)    
+            print(s)
             for j in range(i, len(s)):
                 if s[i:j + 1] in words:
                     res = min(res, dfs(j + 1))
