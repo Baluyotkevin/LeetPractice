@@ -3,7 +3,6 @@ class Solution:
         charSet = set()
         l = 0
         ans = 0
-        # string '' + 'a' = a
         for r in range(len(s)):
             while s[r] in charSet:
                 charSet.remove(s[l])
