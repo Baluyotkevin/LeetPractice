@@ -4,7 +4,7 @@ class Solution:
         start = prices[0]
         len1 = len(prices)
         # [7, 1, 5, 3, 6, 4]
-        for i in range(0, len1):
+        for i in range(1, len1):
             # start = 7, 1, 5, 3 # prrices[i] = 1, 5, 3, 6
             # 7 !=< 1, 1 <= 5, 5 !=< 3, 3 <= 6
             #  total = 5, 5 + 6 = 11
