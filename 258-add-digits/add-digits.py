@@ -1,7 +1,8 @@
 class Solution:
     def addDigits(self, num: int) -> int:
-        num_string = str(num)
-        while len(num_string) > 1:
-            num_list = [ele for ele in num_string]
-            num_string = str(sum([int(num) for num in num_list]))
-        return int(num_string)
+        sum_num = 0
+        while num > 9:
+            num = str(num)
+            num = [int(numb) for numb in num]
+            num = sum(num)
+        return num
