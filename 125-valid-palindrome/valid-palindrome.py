@@ -1,7 +1,12 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        ans = ''
-        for letter in s.lower():
+        # defining a new empty string variable
+        # iterating through the string
+        # check whether the element is an alphabet
+        # then we can return that new variable string == reverse new varaible string
+        res = ''
+        for letter in s:
             if letter.isalnum():
-                ans += letter
-        return ans == ans[::-1]
+                res += letter.lower()
+        print(res)
+        return res == res[::-1]
