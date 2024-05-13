@@ -19,8 +19,8 @@ class Solution:
             if not node.left and not node.right:
                 res.append(path)
                 return
-            dfs(node.right, path)
             dfs(node.left, path)
+            dfs(node.right, path)
         dfs(root, '')
         return res
 
