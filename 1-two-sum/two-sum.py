@@ -14,8 +14,7 @@ class Solution:
             # 7 not in object
             if remaining not in check:
             # { 2 : 0 }
-
                 check[nums[i]] = i
-            elif remaining in check:
+            else:
                 return [i, check[remaining]]
             
